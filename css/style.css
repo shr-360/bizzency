@@ -1,0 +1,362 @@
+:root{
+    --font_family_1: 'Abril Fatface', cursive;
+    --font_famity_2: 'Open Sans', sans-serif;
+    --primary-btn-background: white;
+    --hover-background: #ffc712;
+    --secondary-background: #f5f5f5;
+}
+/* common css start */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+button,
+a{
+    display: inline-block;
+    color: #0f2f44;
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 17px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 36px;
+    font-weight: 800;
+}
+button:hover{
+    background-color: var(--hover-background);
+    box-shadow: none;
+}
+h1,h2{
+    font-family: var(--font_family_1);
+    font-weight: 800;
+}
+p{
+    font-family: var(--font_famity_2);
+
+}
+h3,
+h4,
+h5,
+h6,
+button,
+a{
+    font-family: 'Ubuntu', sans-serif;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+inner_3{
+    width: calc(100% / 3);
+}
+.row{
+    display: flex;
+}
+.flex_justify{
+    justify-content: space-between;
+    align-items: center;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+.inner_container{
+    width: 50%;
+}
+.section_info{
+    text-align: center;
+}
+.section_info h6{
+    font-size: 16px;
+    font-weight: 300;
+    color: #2f4556;
+}
+.section_info h2{
+    font-size: 32px;
+    font-weight: 400;
+    padding-bottom: 22px;
+}
+
+/* common css end */
+
+/* top bar start */
+#top_bar{
+    background-color: #0f2f44;
+}
+.top_Bar{
+    justify-content: space-between;
+    color: #fefefe;
+    padding: 19px 0;
+
+}
+.top_Bar h6{
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 16px;
+}
+/* top bar end */
+
+/* navigation section start */
+nav{
+    background-color: var(--primary-btn-background);
+    position: sticky;
+    top: 0;
+}
+.navigation_section{
+    justify-content: space-between;
+    align-items: center;
+}
+.manubar{
+    justify-content: space-between;
+    align-items: center;
+}
+.manubar li{
+    display: inline-block;
+}
+.manubar ul li a{
+    display: inline-block;
+    font-size: 16px;
+    line-height: 24px;
+    color: #0f2f44;
+    padding: 41px 12px;
+    margin: 0 14px;
+    font-weight: 500;
+    box-shadow: none;
+}
+.manubar ul li a:hover,
+.manubar ul li button:hover{
+    background-color: #fff9e6;
+    color: #ffc712;
+}
+.manubar ul li button{
+    background: none;
+    border: 1px solid #e0e0e0;
+    margin-left: 20px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    box-shadow: none;
+}
+/* navigation section end */
+
+/* Bannar section start */
+#bannar_section{
+    height: 600px;
+    background-image: url(./../images/bannar_1.jpg);
+    background-size: cover;
+}
+.bannar_Section{
+    padding: 140px 0;
+    
+    color: #0f2f44;
+}
+.bannar_Section h3{
+    font-size: 50px;
+    line-height: 70px;
+    font-weight: 300;
+}
+.bannar_Section h1{
+    font-size: 80px;
+    line-height: 70px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.bannar_Section h4{
+    font-size: 32px;
+    font-weight: 400;
+    color: #8484bf;
+    line-height: 24px;
+    letter-spacing: 17px;
+    margin: 15px 0;
+}
+.bannar_Section p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #0f2f44;
+    line-height: 24px;
+    margin-top: 32px;
+}
+.bannar_Section a{
+    display: inline-block;
+    color: white;
+    background-color: #8484bf;
+    padding: 17px 20px;
+    border-radius: 5px;
+    margin-top: 36px;
+    font-weight: 800;
+}
+.bannar_Section button{
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    background: none;
+    color: #8484bf;
+    background-color: var(--primary-btn-background);
+    border-radius: 50%;
+    border: none;
+    font-size: 18px;
+    padding: 0;
+}
+/* Bannar section end */
+
+/* About section start */
+#about_section{
+    
+}
+
+.about_Section{
+    justify-content: space-between;
+    color: #0f2f44;
+    padding: 100px 0;
+}
+.about_content h6{
+    font-size: 14px;
+    font-weight: 400;
+}
+.about_content h2{
+    font-size: 32px;
+    font-weight: 800;
+   }
+.about_content p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 33px 0;
+}
+.about_content li{
+    padding: 15px 32px;
+
+}
+.about_btn button{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-right: 20px;
+}
+/* About section end */
+
+
+/* service section start */
+#service_section{
+    background-color: #f5f5f5;
+    padding: 63px 0;
+}
+.section_head{
+   
+    text-align: center;
+    padding-bottom: 55px;
+
+}
+.section_head p{
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 12px;
+}
+.section_head h2{
+    font-size: 32px;
+    font-weight: 400;
+    padding-bottom: 12px;
+}
+.service_wrap{
+    justify-content: space-between;
+    align-items: center;
+}
+.service_content{
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 30px;
+    padding: 30px 0;
+    height: 186px;
+}
+.service_image{
+    background-color: #e9e9e9;
+    height: 185px;
+    padding: 60px 20px;
+    
+}
+.service_text{
+    padding: 0 20px;
+}
+.service_text h4{
+    font-size: 20px;
+    font-weight: 500;
+    
+}
+.service_text p{
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 20px;
+}
+/* service section start */
+
+/* portfolio section */
+#portfolio_section{
+    padding: 100px 0;
+    text-align: center;
+}
+
+#portfolio_section a{
+    margin: 0 auto;
+    background-color: #ffc712;
+}
+#portfolio_section a:hover{
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+}
+.portfolio_image img{
+    
+}
+/* portfolio section */
+
+/* Testimonial section start */
+#testimonial_section{
+    background-color: var(--secondary-background);
+    padding: 60px 0;
+}
+#testimonial_section h2{
+    padding-bottom: 60px;
+}
+.testimonial_content{
+    background-color: #e9e9e9;
+}
+.testimonial_content{
+    
+    margin-left: 30px;
+}
+.testimonial_content img{
+    height: 100%;
+}
+.p0{
+    margin-left: 0px;
+}
+.testimonial_text{
+    padding: 30px 30px;
+}
+.testimonial_text p{
+    color: #0f2f44;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.testimonial_text h4{
+    color: #0f2f44;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+}
+.testimonial_text h6{
+    color: #0f2f44;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+
+/* Testimonial section end */
